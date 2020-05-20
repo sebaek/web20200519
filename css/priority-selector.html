@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            color: yellow;
+            /* background-color: blue; */
+        }
+        h1.note {
+            color: red;
+        }
+        h1.error {
+            color: teal;
+        }
+        h1.note.error {
+            color: blue;
+        }
+        .note.error {
+            color: grey;
+        }
+
+        #mypara {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="mypara" class="note error">Lorem ipsum dolor sit amet.</h1>
+    <h1 class="note error">Lorem, ipsum dolor.</h1>
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+</body>
+</html>
