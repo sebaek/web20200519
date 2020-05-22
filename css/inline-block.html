@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        .items {
+            display: inline-block;
+            height: 100px;
+            width: 200px;
+        }
+        .items:nth-child(odd) {
+            background-color: black;
+            color: white;
+        }
+        .container {
+            background-color: grey;
+        }
+        .menu-item {
+            display: inline-block;
+            height: 70px;
+            line-height: 70px;
+            font-size: 28px;
+            padding: 0px 15px;
+            background-color: grey;
+            color: white;
+        }
+        .menu-item:hover {
+            background-color: black;
+
+        }
+        #dummy {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="items">Lorem.</div>
+    <div class="items">Cum?</div>
+    <div class="items">Aut!</div>
+    <div class="items">Alias?</div>
+    <div class="items">Libero.</div>
+
+    <div class="container">
+        <div class="menu-item" id="item1">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="menu-item" id="item2">
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="menu-item" id="item3">
+            HTML
+        </div>
+        <div class="menu-item" id="item4">
+            CSS
+        </div>
+        <div class="menu-item" id="item5">
+            MORE <i class="fas fa-caret-down"></i>
+        </div>
+        <div class="menu-item" id="dummy"></div>
+        <div class="menu-item" id="item6">
+            <i class="fas fa-adjust"></i>
+        </div>
+        <div class="menu-item" id="item7">
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+</body>
+</html>
