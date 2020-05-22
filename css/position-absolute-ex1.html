@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #main {
+            position: relative;
+            background-color: grey;
+            color: white;
+            height: 100px;
+            font-size: 50px;
+            width: 200px;
+        }
+        #sub {
+            width: 200px;
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 0px;
+            left: 200px;
+            display: none;
+        }
+        #main:hover #sub {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        MAIN
+        <div id="sub">
+            <div>sub</div>
+            <div>sub</div>
+            <div>sub</div>
+        </div>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, temporibus modi. Iusto at quis iure soluta voluptatibus voluptas dignissimos fuga minima voluptatum magni. Earum ullam, nihil sed quis eum voluptatibus?</p>
+</body>
+</html>
