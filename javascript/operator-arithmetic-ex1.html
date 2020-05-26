@@ -17,7 +17,7 @@
                 <input type="text" class="form-control" id="input2">
             </div>
             <div class="col-4">
-                <button class="btn-info btn"><i class="fas fa-plus"></i></button>
+                <button onclick="plus()" class="btn-info btn"><i class="fas fa-plus"></i></button>
                 <button onclick="minus()" class="btn-info btn"><i class="fas fa-minus"></i></button>
                 <button onclick="times()" class="btn-info btn"><i class="fas fa-times"></i></button>
             </div>
@@ -27,6 +27,15 @@
         </div>
     </div>
     <script>
+        function plus() {
+            var x = document.getElementById("input1").value;
+            var y = document.getElementById("input2").value;
+
+            var xn = Number(x);
+            var yn = Number(y);
+            document.getElementById("result").innerHTML = 
+                xn + yn;
+        }
         function minus() {
             var x = document.getElementById("input1").value;
             var y = document.getElementById("input2").value;
