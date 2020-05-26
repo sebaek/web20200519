@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <button onclick="on();" class="btn btn-primary">Light On</button>
+            </div>
+            <div class="col-6">
+                <img id="demo" class="img-fluid" src="pic_bulboff.gif" alt="">
+            </div>
+            <div class="col-3">
+                <button onclick="off();" class="btn btn-warning">Light Off</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function on() {
+            document.getElementById("demo").src = "pic_bulbon.gif";
+        }
+        function off() {
+            document.getElementById("demo").src = "pic_bulboff.gif";
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+
+
