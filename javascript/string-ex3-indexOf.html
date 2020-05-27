@@ -25,6 +25,14 @@
                 </h1>
             </div>
         </div>
+        <div class="row">
+            <div class="col">
+                <h1>
+                    <span id="result2"></span>
+                    번 인덱스에 있음(뒤에)
+                </h1>
+            </div>
+        </div>
     </div>
     <script>
         function show() {
@@ -32,8 +40,14 @@
             var t2 = document.getElementById("input2").value;
 
             var i = t1.indexOf(t2);
+            var j = t1.lastIndexOf(t2);
+
             document.getElementById("result").innerHTML = i;
+            document.getElementById('result2').innerHTML = j;
         }
     </script>
 </body>
 </html>
+
+
+

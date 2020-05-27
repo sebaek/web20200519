@@ -24,7 +24,61 @@
         var pos = str.indexOf("locate");
         console.log(pos);
 
+        // slice
+        str = "Apple, Banana, Kiwi";
+        var res = str.slice(7, 13);
+        console.log(res);
+        res = str.slice(0, 5);
+        console.log(res);
+        res = str.slice(-4);
+        console.log(res);
         
+        // substring
+        str = "Apple, Banana, Kiwi";
+        res = str.substring(7);
+        console.log(res);
+        
+        // substr
+        str = "Apple, Banana, Kiwi";
+        res = str.substr(7, 6);
+        console.log(res);
+        console.log(str.substr(7));
+        console.log(str.substr(-4));
+        
+        // replace
+        str = "Please visit Microsoft!";
+        res = str.replace("Microsoft", "W3Schools");
+        console.log(res);
+        
+        str = "Please visit Microsoft and Microsoft!";
+        res = str.replace("Microsoft", "W3Schools");
+        console.log(res);
+
+        res = str.replace("MICROSOFT", "W3Schools");
+        console.log(res);
+        
+        // toUpperCase, toLowerCase
+        var text1 = "Hello World!";
+        console.log(text1.toUpperCase());
+        console.log(text1.toLowerCase());
+
+        // trim
+        text1 = "      Hello World!       ";
+        console.log(text1);
+        console.log(text1.trim());
+
+        //charAt
+        text1 = "Hello World!";
+        console.log(text1.charAt(0));
+        console.log(text1.charAt(6));
+        
+        
+        
+        
+        
+        
+        
+
         
         
         
