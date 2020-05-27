@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button onclick="rpsGame(1)" class="btn btn-lg btn-block"><i class="fas fa-hand-rock"></i></button>
+                <button onclick="rpsGame(0)" class="btn btn-lg btn-block"><i class="fas fa-hand-scissors"></i></button>
+                <button onclick="rpsGame(2)" class="btn btn-lg btn-block"><i class="fas fa-hand-paper"></i></button>
+            </div>
+            <div class="col">
+                <h1 class="text-center">VS</h1>
+            </div>
+            <div class="col">
+                <button class="btn btn-lg btn-block btn-danger" id="btn-com"></button>
+            </div>
+            <div class="col">
+                <h1 id="result"></h1>
+            </div>
+        </div>
+    </div>
+    <script>
+        function rpsGame(u) {
+            var user = u;
+            var comp = rpsComputer();
+
+            var result = "";
+            
+            if (user == comp) {
+                result = "비겼습니다.";
+            } else if (user == 0 && comp == 1) {
+                result = "졌습니다.";
+            } else if (user == 1 && comp == 2) {
+                result = "졌습니다.";
+            } else if (user == 2 && comp == 0) {
+                result = "졌습니다.";
+            } else {
+                result = "이겼습니다.";
+            }
+
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function rpsComputer() {
+            // 0:가위, 1:바위, 2:보
+            var r = Math.floor(Math.random() * 3);
+            console.log(r);
+
+            var content = "";
+            if (r == 0) {
+                content = "<i class='fas fa-hand-scissors'></i>";
+            } else if (r == 1) {
+                content = "<i class='fas fa-hand-rock'></i>";
+            } else if (r == 2) {
+                content = "<i class='fas fa-hand-paper'></i>";
+            }
+            document.getElementById("btn-com").innerHTML = content;
+
+            return r;
+        }
+        rpsComputer();
+    </script>
+</body>
+</html>
