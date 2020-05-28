@@ -16,10 +16,12 @@
 </head>
 <body>
     <div class="container">
+        <h1 id="result5"></h1>
         <h1 id="result"></h1>
         <h1 id="result2"></h1>
         <h1 id="result3"></h1>
         <h1 id="result4"></h1>
+
     </div>
     <script>
         
@@ -39,7 +41,51 @@
 
         document.getElementById("result").innerHTML = res;
 
+        res = "";
+        for (var i = 0; i < 5; i++) {
+            for (var j = 0; j < (5-i); j++) {
+                res += "*";
+            }
+            res += "<br>";
+        }
+        document.getElementById("result2").innerHTML = res;
 
+        res = "";
+        for (var i = 0; i < 5; i++) {
+            for (var k = 0; k < (4-i); k++) {
+                res += "&nbsp;";
+            }
+
+            for (var j = 0; j <= i; j++) {
+                res += "*";
+            }
+            res += "<br>";
+        }
+        document.getElementById("result3").innerHTML = res;
+
+        res = "";
+        for (var i = 0; i < 5; i++) {
+            for (var k = 0; k < i; k++) {
+                res += "&nbsp;";
+            }
+            for (var j = 0; j < (5-i); j++) {
+                res += "*";
+            }
+            res += "<br>";
+        }
+        document.getElementById("result4").innerHTML = res;
+
+        res = "";
+        var t = 0;
+        for (var i = 0; i < 6; i++) {
+            for (var j = 0; j <= i; j++) {
+                res += (t % 10);
+                t++;
+            }
+            res += "<br>";
+        }
+
+        document.getElementById("result5").innerHTML = res;
 
     </script>
 </body>
