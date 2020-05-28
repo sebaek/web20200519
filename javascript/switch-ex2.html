@@ -25,22 +25,28 @@
     <script>
         function check() {
             var x = document.getElementById("input1").value;
+            // x = x.toUpperCase();
 
             var result = "";
             switch (x) {
                 case "A":
+                case "a":
                     result = "90점 이상";
                     break;
                 case "B":
+                case "b":
                     result = "80점 이상";
                     break;
                 case "C":
+                case "c":
                     result = "70점 이상";
                     break;
                 case "D":
+                case "d":
                     result = "60점 이상";
                     break;
                 case "F":
+                case "f":
                     result = "60점 미만";
                     break;
                 default:
