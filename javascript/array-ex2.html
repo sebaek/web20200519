@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <input onkeyup="list2()" type="text" id="input1" class="form-control">
+            </div>
+            <div class="col">
+                <ul id="result">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var array = [
+            "java",
+            "javascript",
+            "html",
+            "css",
+            "jquery",
+            "python",
+            "react",
+            "vue",
+            "angular",
+            "spring"
+        ];
+
+        function list2() {
+            var t = document.getElementById("input1").value;
+
+            var res = "";
+            for (var i = 0; i < array.length;i++) {
+                if (array[i].indexOf(t) >= 0) {
+                    res += "<li>" + array[i] + "</li>";
+                }
+            }
+            document.getElementById('result').innerHTML = res;
+        }
+
+        list2();
+    </script>
+</body>
+</html>
