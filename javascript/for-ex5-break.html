@@ -10,23 +10,16 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div id="result">
-
-                </div>
-            </div>
-        </div>
-    </div>
     <script>
-
-        var result = "";
-        for (var i = 9; i >= 1; i--) {
-            result +=
-             "2 &times; " + i + " = " + (2 *i) + "<br>";
+        for (var i = 0; i < 5; i++) {
+            console.log("some");
+            if (i == 2) {
+                break;
+            }
+            console.log("other");
         }
-        document.getElementById('result').innerHTML = result;
+
+
     </script>
 </body>
 </html>

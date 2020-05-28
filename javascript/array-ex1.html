@@ -10,23 +10,28 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div id="result">
-
-                </div>
-            </div>
-        </div>
-    </div>
     <script>
+        // array (배열)
+        var i = ["berry", "apple", "banana"];
 
-        var result = "";
-        for (var i = 9; i >= 1; i--) {
-            result +=
-             "2 &times; " + i + " = " + (2 *i) + "<br>";
+        console.log(i[0]);
+        console.log(i[1]);
+        console.log(i[2]);
+
+        i[0] = "kiwi";
+        i[1] = "dragon";
+        i[2] = "lion";
+
+        console.log(i.length);
+
+        for (var j = 0; j < i.length; j++) {
+            console.log(i[j]);
         }
-        document.getElementById('result').innerHTML = result;
+        
+        
+
+
+
     </script>
 </body>
 </html>
