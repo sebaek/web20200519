@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                // $("tr:odd").hide();
+                // $("tr").odd().hide();
+                $("tr:nth-child(even)").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button class="btn">클릭</button>
+                <table class="table">
+                    <tr>
+                        <td>Lorem.</td>
+                        <td>Maxime.</td>
+                        <td>Voluptatem.</td>
+                        <td>Dicta!</td>
+                        <td>Incidunt.</td>
+                    </tr>
+                    <tr>
+                        <td>Facilis.</td>
+                        <td>Modi.</td>
+                        <td>Cupiditate.</td>
+                        <td>Laboriosam.</td>
+                        <td>Laudantium?</td>
+                    </tr>
+                    <tr>
+                        <td>Doloribus.</td>
+                        <td>Iusto.</td>
+                        <td>Facilis!</td>
+                        <td>Veniam?</td>
+                        <td>Blanditiis.</td>
+                    </tr>
+                    <tr>
+                        <td>Eaque?</td>
+                        <td>Illum.</td>
+                        <td>Fugiat.</td>
+                        <td>Culpa.</td>
+                        <td>Dolore.</td>
+                    </tr>
+                    <tr>
+                        <td>Impedit.</td>
+                        <td>Labore!</td>
+                        <td>In.</td>
+                        <td>Dolor?</td>
+                        <td>Consequuntur!</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
