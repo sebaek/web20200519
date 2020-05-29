@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button onclick="myFunc()" id="button1">클릭</button>
+        <hr>
+        <button id="button2">클릭2</button>
+
+        <script>
+            var b = document.getElementById("button2");
+            b.onclick = myFunc;
+
+            function myFunc() {
+                alert("hello");
+            }
+        </script>
+    </body>
+</html>
