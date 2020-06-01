@@ -10,29 +10,29 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script>
         $(function() {
-            $("#btn1").click(function(){
-                $("h1").fadeIn("slow");
+            $("button").click(function() {
+                $("#image").fadeIn();
             });
-            $("#btn2").click(function() {
-                $("h1").fadeOut("fast");
+            $("#image").click(function() {
+                $(this).fadeOut();
             })
-            $("#btn3").click(function() {
-                $("h1").fadeToggle(2000);
-            })
-
         })
     </script>
+    <style>
+        #image {
+            display: none;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col">
-                <button class="btn btn-primary" id="btn1">fade in</button>
-                <button class="btn btn-secondary" id="btn2">fade out</button>
-                <button class="btn btn-info" id="btn3">fade toggle</button>
-
-                <h1>Lorem, ipsum dolor.</h1>
-
+                <button class="btn btn-primary">그림 보여줘</button>
+                <br>
+                <img src="../아이언맨.jpg" alt="" id="image">
             </div>
         </div>
     </div>
