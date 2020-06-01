@@ -10,27 +10,18 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script>
         $(function() {
-            $("#hide").click(function() {
-                $("p").hide();
-                // $("p").hide("fast");
-                // $("p").hide("slow");
-                // $("p").hide(3000);
+            $("#toggle").click(function() {
+                $("p").toggle("slow");
             })
-            $("#show").click(function() {
-                $("p").show(3000);
-            })
-        });
+        })
     </script>
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col">
-                <button class="btn btn-block btn-primary" id="hide">숨겨</button>
-                <button class="btn btn-block btn-info" id="show">보여줘</button>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam est natus rerum expedita dolor, dolorem quas possimus, nesciunt doloribus tenetur ex dolores repellendus, pariatur quia. Animi inventore minima fuga non.</p>
-
-
+                <button class="btn btn-warning" id="toggle">토글</button>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis sit consectetur, necessitatibus voluptatum reprehenderit nihil qui iusto odit labore excepturi sequi provident natus aliquid facere quasi ducimus possimus enim eius.</p>
             </div>
         </div>
     </div>
