@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+        <script>
+            $(function() {
+                $("h1").click(function() {
+                    $(this).hide(3000, function() {
+                        console.log("완료");
+                    });
+                })
+            })
+        </script>
+
+    </head>
+    <body>
+        <h1>Lorem, ipsum dolor.</h1>
+
+    </body>
+</html>
